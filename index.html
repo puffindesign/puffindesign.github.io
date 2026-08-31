@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puffin Design</title>
+<style>
+  :root{ --ink:#1c1c1e; --muted:#6b6b70; --accent:#a8862f; --line:#e6e4de; }
+  *{ box-sizing:border-box }
+  body{ margin:0; background:#faf9f6; color:var(--ink);
+        font:400 17px/1.6 -apple-system,"SF Pro Text",Segoe UI,system-ui,sans-serif;
+        -webkit-font-smoothing:antialiased }
+  main{ max-width:640px; margin:0 auto; padding:72px 24px 96px }
+  h1{ margin:0 0 8px; font:600 30px/1.15 -apple-system,"SF Pro Display",system-ui; letter-spacing:-.02em }
+  p.lede{ margin:0 0 40px; color:var(--muted) }
+  h2{ margin:40px 0 12px; font:600 13px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;
+      letter-spacing:.1em; text-transform:uppercase; color:var(--accent) }
+  ul{ margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:2px }
+  li{ border-bottom:1px solid var(--line) }
+  li:first-child{ border-top:1px solid var(--line) }
+  a{ color:var(--ink); text-decoration:none }
+  a:hover{ color:var(--accent) }
+  li a{ display:flex; align-items:baseline; justify-content:space-between; gap:16px; padding:14px 2px }
+  li a span{ font-size:15px; color:var(--muted) }
+  footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+          font-size:15px; color:var(--muted) }
+  footer a{ color:var(--accent) }
+</style>
+</head>
+<body>
+<main>
+  <h1>Puffin Design</h1>
+  <p class="lede">Small, quiet apps.</p>
+
+  <h2>Apps</h2>
+  <ul>
+    <li><a href="/sandflowart/">SandFlowArt <span>Real sand painting, on your phone</span></a></li>
+  </ul>
+
+  <h2>Legal</h2>
+  <ul>
+    <li><a href="/terms/">Terms of Use <span>All apps</span></a></li>
+    <li><a href="/sandflowart/privacy/">Privacy Policy <span>SandFlowArt</span></a></li>
+  </ul>
+
+  <footer>
+    Questions, bugs, anything at all — <a href="mailto:contact@puffindesign.ca">contact@puffindesign.ca</a>
+  </footer>
+</main>
+</body>
+</html>
