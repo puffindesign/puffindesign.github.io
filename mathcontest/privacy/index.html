@@ -30,20 +30,21 @@
   <h1>Privacy Policy</h1>
   <p class="meta">MathContest · Last updated 15 October 2026</p>
 
-  <p class="head">MathContest has no accounts and no sign-up. Your problems, scratch work and answers stay on your device and, if you turn it on, in your own iCloud — we cannot see them. Two Google services receive a small amount of data: Google Analytics (anonymous usage counts, which you can turn off) and Google AdMob (ads in the free version, always the non-personalized kind suitable for children). Nothing is used to track you across apps, and the app never asks for tracking permission.</p>
+  <p class="head">MathContest has no accounts and no sign-up. Your problems, scratch work and answers stay on your device and, if you turn it on, in your own iCloud (iPhone and iPad) or your own Android backup — we cannot see them. Two Google services receive a small amount of data: Google Analytics (anonymous usage counts, which you can turn off) and Google AdMob (ads in the free version, always the non-personalized kind suitable for children). Nothing is used to track you across apps, the app never reads the advertising identifier on iOS or Android, and it never asks for tracking permission.</p>
 
   <h2>What stays with you</h2>
   <ul>
     <li><strong>Your practice.</strong> Problems you have done, your answer choices, your handwritten scratch work, timed tests, topic statistics and settings are stored on your device and, if iCloud sync is on, in your personal iCloud account (Apple CloudKit private database). That storage belongs to you; we have no access to it and run no servers of our own.</li>
     <li><strong>Your handwriting.</strong> Ink you write with Apple Pencil or your finger is saved with your practice as described above. It is never uploaded to us or to any third party.</li>
+    <li><strong>On Android.</strong> There is no iCloud. Your practice and scratch work are stored on the device and are included in Android’s own automatic backup to your Google account, if backup is turned on in your device settings, so they can come back when you reinstall or move to a new phone. That backup is handled by Google for you; we cannot open it.</li>
     <li><strong>Export files.</strong> If you export your practice record, the file goes only where you choose to save or send it.</li>
   </ul>
 
   <h2>Usage statistics — Google Analytics</h2>
   <p>To see which features work and where people get stuck, the app sends a short, fixed list of usage events to Google Analytics (through the Firebase SDK, which is used for Analytics only). Examples: which contest level was picked, that today’s set was finished and how many were correct, that a practice test was started or submitted, that a solution was opened, that the upgrade screen was shown, and whether a purchase or restore succeeded. Each event carries only simple values such as a level, a count or which screen it came from.</p>
   <ul>
-    <li><strong>Collected:</strong> those usage events, a random app-instance identifier created by the SDK (it changes if you delete and reinstall the app), device model, iOS version, app version, and the IP address that every network request carries (Google uses it for approximate country only).</li>
-    <li><strong>Never collected:</strong> your name, email or Apple Account; problem content, answer choices or scratch work; the advertising identifier (IDFA); the identifier for vendor (IDFV); precise location. We set no user ID and no user properties.</li>
+    <li><strong>Collected:</strong> those usage events, a random app-instance identifier created by the SDK (it changes if you delete and reinstall the app), device model, operating system version, app version, and the IP address that every network request carries (Google uses it for approximate country only).</li>
+    <li><strong>Never collected:</strong> your name, email or Apple Account; problem content, answer choices or scratch work; the advertising identifier (IDFA on iOS, Android advertising ID on Android); the identifier for vendor (IDFV); precise location. We set no user ID and no user properties.</li>
     <li><strong>Used only</strong> to understand how features are used and how people move from the free version to a purchase — in other words, to support the internal operation of the app. It is not used for advertising, not used to build a profile of anyone, and not combined with other data. Google signals and ad personalization are turned off for this app’s Analytics property.</li>
     <li><strong>Kept</strong> by Google for 2 months, the shortest setting available.</li>
     <li><strong>Turn it off</strong> any time in the app: Settings › Share Usage Statistics. When it is off, nothing more is sent, and nothing is saved up to send later.</li>
@@ -55,12 +56,14 @@
   <ul>
     <li>A short rewarded video is offered only when you tap to watch it, in exchange for one extra problem that day.</li>
     <li>A full-screen ad may appear at most once a day when you leave a finished set, and a banner sits at the bottom of the history list. These two do not appear at all during the first 3 days after you install the app.</li>
-    <li>Every ad request is marked as directed to children: ads are non-personalized (based on the app’s content, not on you) and limited to content rated G. The app does not read the advertising identifier and never shows the iOS tracking permission prompt.</li>
-    <li>To serve an ad, count it and prevent fraud, AdMob receives information such as your device type, iOS version, the app’s identity, an approximate location derived from your IP address, an identifier limited to this app or developer (never the advertising identifier), which ads were shown and whether they were tapped, and the SDK’s own performance and crash diagnostics. Google may use this to measure and serve ads and to keep its ad service working; because every request is marked as directed to children, it is not used for personalized ads or to follow you across other companies’ apps. None of your practice data is sent.</li>
+    <li>Every ad request is marked as directed to children: ads are non-personalized (based on the app’s content, not on you) and limited to content rated G. The app does not read the advertising identifier and never shows the iOS tracking permission prompt. On Android, the advertising ID permission is removed from the app altogether, so neither the app nor the Google SDKs inside it can read the Android advertising ID.</li>
+    <li>To serve an ad, count it and prevent fraud, AdMob receives information such as your device type, operating system version, the app’s identity, an approximate location derived from your IP address, an identifier limited to this app or developer (never the advertising identifier), which ads were shown and whether they were tapped, and the SDK’s own performance and crash diagnostics. Google may use this to measure and serve ads and to keep its ad service working; because every request is marked as directed to children, it is not used for personalized ads or to follow you across other companies’ apps. None of your practice data is sent.</li>
   </ul>
 
-  <h2>Purchases — Apple</h2>
-  <p>Subscriptions and the lifetime purchase are processed entirely by Apple through the App Store. We never receive your name, email, card number or billing address. The app checks what you have bought directly with Apple on your device. Purchases and practice data do not carry over to the Android version, and vice versa.</p>
+  <h2>Purchases — Apple and Google Play</h2>
+  <p>Subscriptions and the lifetime purchase are processed entirely by Apple through the App Store. We never receive your name, email, card number or billing address. The app checks what you have bought directly with Apple on your device.</p>
+  <p>On Android, purchases are processed entirely by Google Play. Again, we never receive your name, email or payment details; the app asks Google Play on your device what your Google account has bought. If a parent approves purchases through Google Family Link, the purchase stays pending until it is approved, and nothing is unlocked before then.</p>
+  <p>Purchases and practice data do not carry over between the Apple and Android versions. To move your practice, use Export in one and Import in the other.</p>
 
   <h2>Children</h2>
   <p>MathContest is a study tool for middle-school math contests, so many of its users are under 13. That is why the app has no accounts, no chat, no user-to-user content and no social features; why ads are always non-personalized and child-directed; and why the only analytics are the anonymous counts described above, used solely to support the internal operation of the app as permitted by the U.S. Children’s Online Privacy Protection Act (COPPA). We do not knowingly collect personal information from children. A parent who has questions, or who wants the analytics data for a device removed, can write to the address below.</p>
@@ -69,7 +72,8 @@
   <ul>
     <li>Turn usage statistics off in Settings › Share Usage Statistics.</li>
     <li>Delete the app to remove everything on your device. To remove synced practice, go to Settings › [your name] › iCloud › Manage Account Storage and delete MathContest’s data, or use Settings › Erase All Records in the app.</li>
-    <li>Manage or cancel a subscription in Settings › [your name] › Subscriptions.</li>
+    <li>On Android, delete the app to remove what is on the device; to remove the copy in your Google backup, manage backups in your device’s Settings › Google › Backup.</li>
+    <li>Manage or cancel a subscription in Settings › [your name] › Subscriptions on iPhone or iPad, or in Google Play › Payments &amp; subscriptions › Subscriptions on Android.</li>
     <li>Wherever you live — including California, the EU, the UK and Canada — you can ask about, or ask us to delete, the anonymous analytics data associated with your installation. Write to the address below; we do not sell or share personal information.</li>
   </ul>
 
@@ -78,7 +82,7 @@
 
   <footer>
     Questions — <a href="mailto:contact@puffindesign.ca?subject=MathContest%20privacy">contact@puffindesign.ca</a><br>
-    Puffin Design Inc. · Canada · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a>
+    Puffin Design Inc. · Canada · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use for the App Store version (Apple standard EULA)</a>
   </footer>
 </main>
 </body>
